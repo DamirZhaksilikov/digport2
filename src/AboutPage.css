@@ -1,0 +1,57 @@
+#about-page {
+    position: relative;
+}
+
+#scroll-markers-container {
+    position: relative;
+    display: flex;
+    height: 94vh;
+    width: 100vw;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.scroll-marker {
+    width: 1.06382979vw;
+    height: 94vh;
+    z-index: 1000;
+}
+
+#about-page-content {
+    position: absolute;
+    margin-left: 1.5vw;
+    left: 0;
+    top: 0;
+}
+
+#cover-images {
+    height: 55vh;
+}
+
+.cover-image {
+    position: absolute;
+    height: 55vh;
+    margin-top: 1.5vh;
+}
+
+.hidden-cover-image {
+    visibility: hidden;
+}
+
+#cover-image-caption {
+    margin-top: 2.75vh;
+}
+
+#artist-bio-text {
+    width: 55vw;
+    margin-top: 2vh;
+}
+
+#bio-main-text {
+    margin-top: 1vh;
+}
+
+#contact-links {
+    z-index: 10000;
+    position: absolute;
+}

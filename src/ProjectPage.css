@@ -1,0 +1,112 @@
+#project-page {
+    position: relative;
+}
+
+#project-page-row1 {
+    top: -6vh;
+    width: 55vw;
+    position: absolute;
+    margin-right: 1.5vw;
+    float: left;
+    overflow-y: scroll;
+    box-sizing: content-box;
+    height: 100vh;
+}
+
+.project-content-item {
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+.project-content-description {
+    margin-left: 1.5vw;
+    width: 100% - 1.5vw;
+    margin-bottom: 3vh;
+}
+
+#project-page-row2 {
+    width: 42vw;
+    float: right;
+    margin-right: 1.5vw;
+    overflow-y: scroll;
+    box-sizing: content-box;
+    height: 92vh;
+}
+
+#project-page-name {
+    font-size: 2vh;
+    -webkit-transform: scale(1, 1.15);
+    -moz-transform: scale(1, 1.15);
+    -ms-transform: scale(1, 1.15);
+    -o-transform: scale(1, 1.15);
+    transform: scale(1, 1.15);
+    letter-spacing: -0.5px;
+
+    margin: 20vh 0vh 20vh 0vh;
+    width: 100%;
+    text-align: center;
+}
+
+#project-page-ongoing {
+    margin-top: .5vh;
+    color: grey;
+    font-size: 1.75vh !important;
+}
+
+.project-metadata-entry {
+    display: flex;
+    font-size: 1.3vh;
+    line-height: 1.6vh;
+}
+
+.project-page-metadata-title {
+    width: 30%;
+}
+
+.project-page-metadata-value {
+    width: 70%;
+    text-align: right;
+}
+
+#project-page-description {
+    width: 28;
+    padding-left: 7vw;
+    margin-top: 7.5vh;
+}
+
+.embed-responsive-parent {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2vh;
+}
+
+#father-stephen-video1-parent {
+    padding-bottom: 66%;
+}
+
+#gulf-war-illness-video1-parent {
+    padding-bottom: 56.25%;
+}
+
+#mother-video1-parent {
+    padding-bottom: 55.5%;
+}
+
+#mother-video2-parent {
+    padding-bottom: 55.5%;
+}
+
+#wdiatt-video1-parent {
+    padding-bottom: 66%;
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

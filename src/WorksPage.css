@@ -1,0 +1,6 @@
+#projects-previews-collection {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 100vw;
+}

@@ -1,0 +1,21 @@
+#navigation-bar {
+  height: 6vh;
+  background-color: white;
+}
+
+.navigation-link {
+  float: right;
+  margin-right: 1.5vw;
+  margin-top: 2.1vh;
+  transition: all .2s ease-in;
+  -webkit-transform: scale(1, 1.09);
+  -moz-transform: scale(1, 1.09);
+  -ms-transform: scale(1, 1.09);
+  -o-transform: scale(1, 1.09);
+  transform: scale(1, 1.09);
+  letter-spacing: -0.5px;
+}
+
+.navigation-link:hover {
+  background-color: black;
+}
