@@ -1,16 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.59c8aeca.css",
-    "main.js": "/static/js/main.7a0d7d6d.js",
+    "main.js": "/static/js/main.1b2d0b77.js",
     "static/js/787.9e4fa5a3.chunk.js": "/static/js/787.9e4fa5a3.chunk.js",
     "static/media/fatherstephen_cover.mp4": "/static/media/fatherstephen_cover.071a718c7ef04e61d01e.mp4",
     "static/media/gulfwarillness_cover.mp4": "/static/media/gulfwarillness_cover.3958b77fe8c2495cd44d.mp4",
     "static/media/wdiatt_image6.png": "/static/media/wdiatt_image6.3a94347f8331145a2b6d.png",
     "static/media/wdiatt_image7.png": "/static/media/wdiatt_image7.b61afa6a23bc4d5df8c7.png",
     "static/media/wedoitallthetime_cover.mp4": "/static/media/wedoitallthetime_cover.29737e92a4b1f4eb72e5.mp4",
-    "static/media/mother_image1.jpg": "/static/media/mother_image1.18f3772d0aa9bf45db5d.jpg",
     "static/media/mother_cover.jpg": "/static/media/mother_cover.e8042c3c6233e6051fc6.jpg",
-    "static/media/mother_image2.jpg": "/static/media/mother_image2.18e84cc026e72e42fab6.jpg",
     "static/media/mother_cover.mp4": "/static/media/mother_cover.e31bda8ef2463a9a714d.mp4",
     "static/media/wdiatt_image1.jpg": "/static/media/wdiatt_image1.f49af8317ddf2df1fb6e.jpg",
     "static/media/wedoitallthetime_cover.jpg": "/static/media/wedoitallthetime_cover.5d5f5c29eba7e82e6f46.jpg",
@@ -23,6 +21,7 @@
     "static/media/fatherstephen_cover.png": "/static/media/fatherstephen_cover.888d2d8296afcb7aa7b4.png",
     "static/media/gulfwarillness_video2.mp4": "/static/media/gulfwarillness_video2.f20874334996bc1f379e.mp4",
     "static/media/dollhouse_cover.png": "/static/media/dollhouse_cover.220704f1bdb7550069f3.png",
+    "static/media/mother_image1.jpg": "/static/media/mother_image1.a54d53786a35c1b0c573.jpg",
     "static/media/gulfwarillness_image3.jpg": "/static/media/gulfwarillness_image3.06190fa01040188ff54a.jpg",
     "static/media/fatherstephen_image2.jpg": "/static/media/fatherstephen_image2.c5dd7bb464dd1952b665.jpg",
     "static/media/fatherstephen_image1.jpg": "/static/media/fatherstephen_image1.5c67b0842ed688dccdd2.jpg",
@@ -137,11 +136,11 @@
     "static/media/frame_00.jpg": "/static/media/frame_00.a052c96f06c5095c59c4.jpg",
     "index.html": "/index.html",
     "main.59c8aeca.css.map": "/static/css/main.59c8aeca.css.map",
-    "main.7a0d7d6d.js.map": "/static/js/main.7a0d7d6d.js.map",
+    "main.1b2d0b77.js.map": "/static/js/main.1b2d0b77.js.map",
     "787.9e4fa5a3.chunk.js.map": "/static/js/787.9e4fa5a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.59c8aeca.css",
-    "static/js/main.7a0d7d6d.js"
+    "static/js/main.1b2d0b77.js"
   ]
 }
