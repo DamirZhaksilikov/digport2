@@ -34,7 +34,7 @@
 }
 
 #project-page-name {
-    font-size: 2vh;
+    font-size: 16px;
     -webkit-transform: scale(1, 1.15);
     -moz-transform: scale(1, 1.15);
     -ms-transform: scale(1, 1.15);
@@ -50,13 +50,13 @@
 #project-page-ongoing {
     margin-top: .5vh;
     color: grey;
-    font-size: 1.75vh !important;
+    font-size: 14px !important;
 }
 
 .project-metadata-entry {
     display: flex;
-    font-size: 1.3vh;
-    line-height: 1.6vh;
+    font-size: 10.5px;
+    line-height: 12.5px;
 }
 
 .project-page-metadata-title {
