@@ -72,18 +72,13 @@ export const projects = [
             },
             {
                 src: GulfWarIllnessVideo1,
-                description: "Prototype of the low cost medical ventilator",
-                type: "gif-video"
+                description: "Prototype of the low cost medical ventilator. The ventilator is built largely using <a href='https://emergency-vent.mit.edu/' target='_blank'>open-source documents from MIT</a> which built a low-cost ventilator in response to the COVID-19 pandemic. This ventilator was used as a baseline and then modified using declassified documents from YPG.",
+                type: "muted-video"
             },
             {
                 src: GulfWarIllnessVideo2,
                 description: "Installation test",
-                type: "gif-video",
-            },
-            {
-                src: GulfWarIllnessImage2,
-                description: "The ventilator is built largely using <a href='https://emergency-vent.mit.edu/' target='_blank'>open-source documents from MIT</a> which built a low-cost ventilator in response to the COVID-19 pandemic. This ventilator was used as a baseline and then modified using declassified documents from YPG.",
-                type: "image"
+                type: "muted-video",
             },
             {
                 src: GulfWarIllnessImage3,
@@ -142,7 +137,7 @@ export const projects = [
         data_origin: ["Seattle, USA"],
         forums: ["Kinetic sculpture"],
         description: "A portrait of my mother using the kind of private data she provides medical institutions. Using an ML generated model, based on actual vitals measured from her, these machines pump and breath at the (generated) rate that my mother’s heart and lungs did on 22/02/22. A portrait in the form of a clock, running everyday and reliving 22/02/22 forever.",
-        long_description: "<p>A speculative scenario toying with a P2P model of data ownership. This installation exists as a fictional scene: a son, after the loss of a mother, is granted access to a digital server where he finds extensive digital traces of her. Among these spectres, are medical logs that under today’s data collection standards, are stored by your medical provider and thus inaccessible to dependents. Using data from the locker and spare parts he finds in his shed, the son rebuilds an image of his mother.</p><p>To create this scenario, the fictional medical data was supplied by my own mother. I asked her to record her vitals every half hour on the 22nd of February 2022, which I then ran a model on to generate a 24 hour image of her heart and breathing rate. This information powers a couple of machines––a mechanical heart and lungs.</p><p>If you looked at these machines at this moment, they’d be pumping and breathing at the (generated) rate that my mother’s heart and lungs did at the same time on the 22nd of February. A portrait in the form of a clock, running everyday and reliving 22/02/22 forever.</p>",
+        long_description: "<p>Toying with a P2P model of data ownership, this installation is a fictional scene: a son, after the loss of a mother, is granted access to a digital server where he finds extensive digital traces of her. Among these spectres, are medical logs that under today’s data collection standards, are stored by your medical provider and thus inaccessible to dependents. Using data from the locker and spare parts he finds in his shed, the son rebuilds an image of his mother.</p><p>To create this scenario, the fictional medical data was supplied by my own mother. I asked her to record her vitals every half hour on the 22nd of February 2022, which I then ran a model on to generate a 24 hour image of her heart and breathing rate. This information powers a couple of machines––a mechanical heart and lungs.</p><p>If you looked at these machines at this moment, they’d be pumping and breathing at the (generated) rate that my mother’s heart and lungs did at the same time on the 22nd of February. A portrait in the form of a clock, running everyday and reliving 22/02/22 forever.</p>",
         visual_content: [
             {
                 src: MotherImage1,
@@ -155,7 +150,7 @@ export const projects = [
             },
             {
                 content: MotherVideo2,
-                description: "A stream of my mother's generated vitals from the 22nd of February 2022 overlaid with a voice recording she recorded for me on the same day.",
+                description: "A stream of my mother's generated vitals from the 22nd of February 2022 overlaid with a voice recording she recorded the same day.",
                 type: "vimeo-video",
             }
         ]
@@ -217,7 +212,7 @@ export const projects = [
         year: 2020,
         data_origin: ["Non-specific"],
         forums: ["Web platform"],
-        description: "During the pandemic lockdowns, ‘inviting someone in’ often only extended so far as digital interaction. Doll House, then, was an explicit extension of my home onto the web––a space for experiments in virtual intimacy towards visitors who, largely, came from my immediate community.",
+        description: "During the pandemic lockdowns, <i>inviting someone in</i> often only extended so far as digital interaction. Doll House, then, was an explicit extension of my home onto the web––a space for experiments in virtual intimacy towards visitors who, largely, came from my immediate community.",
         long_description: "<p>Now defunct, <i>Doll House</i> was a digital environment which operated as an extension of my physical home onto cyberspace––acting as a substitute for experience that had been restricted by the pandemic lockdowns. In practice, it was composed of a series of rooms which attempted to digitally reproduce interactions which happen within the home.  Each room focused on a specific domestic experience––craft, intimate communication, community and so forth. Interactive objects populated these rooms, each either containing private ephemera––personal essays, photos, notes, etc.––or provided a means of digital interaction––a web radio where friends played playlists, a portal where my loved ones could share things they made in lockdown.</p><p>At their core, each component of <i>Doll House</i> intended to define and reflect the specificity of what the home <i>felt like</i> and moreover what had been carved out in light of our siloed experiences within them.</p>",
         visual_content: [
             {

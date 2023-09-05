@@ -48,9 +48,23 @@
 }
 
 #project-page-ongoing {
-    margin-top: .5vh;
-    color: grey;
-    font-size: 14px !important;
+    margin: 1.65vh auto 0 auto;
+    font-size: 10px !important;
+    letter-spacing: -.05px;
+    color: black;
+    width: 20%;
+
+    padding-top: 3px;
+    padding-bottom: 5px;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-radius: 50%;
+
+    -webkit-transform: scale(1, 1.15);
+    -moz-transform: scale(1, 1.15);
+    -ms-transform: scale(1, 1.15);
+    -o-transform: scale(1, 1.15);
+    transform: scale(1, 1.15);
 }
 
 .project-metadata-entry {

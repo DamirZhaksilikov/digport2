@@ -26,7 +26,7 @@ export default function ProjectPage() {
         <div id="project-page-row2" className='project-page-row'>
             <div id="project-page-name">
                 {project.name}
-                {project.isOnGoing && <div id="project-page-ongoing">{"+ currently ongoing +"}</div>}
+                {project.isOnGoing && <div id="project-page-ongoing">{"currently ongoing"}</div>}
             </div>
             <div id="project-page-metadata">
                 <div className='project-metadata-entry'>
@@ -62,8 +62,8 @@ function renderVisualContent(content) {
         return (<video className="project-content-item" poster={content.coverPhoto} controls>
             <source src={content.src} type="video/mp4" />
         </video>)
-    } else if (content.type === 'gif-video') {
-        return (<video className="project-content-item" muted loop autoPlay>
+    } else if (content.type === 'muted-video') {
+        return (<video className="project-content-item" poster={content.coverPhoto} muted controls>
             <source src={content.src} type="video/mp4" />
         </video>)
     } else if (content.type === 'vimeo-video') {

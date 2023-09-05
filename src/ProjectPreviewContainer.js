@@ -56,7 +56,7 @@ export default function ProjectPreviewContainer(props) {
                             {props.isOnGoing ?
                                 <div>
                                     {props.name}
-                                    <i> (ongoing)</i>
+                                    <i id="ongoing-tag"> (currently ongoing)</i>
                                 </div> :
                                 props.name
                             }
