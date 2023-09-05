@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './AboutPage.css';
 import { Link } from 'react-router-dom';
+import cv_pdf from './assets/general/CV-2023.06.pdf'
 
 function importAll(r) {
     let sortedKeys = r.keys().sort()
@@ -39,17 +40,14 @@ export default function AboutPage() {
             <div id="artist-bio-text">
                 {'***'}
                 <br />
-
                 <div id="bio-main-text">{artistBioText}</div>
-
                 <br />
-                <div id='contact-info'>Full CV and portfolio available upon request.</div>
-
+                <div id='contact-info'>PDF portfolio available upon request.</div>
                 <br />
             </div>
             <div id="contact-links">
+            <a href={cv_pdf} target="_blank">CV</a><br/>
                 <Link className='contact-link' to='mailto:damir.zhaksilikov@gmail.com' target='_blank'>damir.zhaksilikov@gmail.com</Link><br />
-
                 <br />
                 <Link className='contact-link' to='https://www.are.na/damir-zhaksilikov/' target='_blank'>are.na</Link><br />
                 <Link className='contact-link' to='https://www.instagram.com/damirzhaksilikov/' target='_blank'>social</Link><br />

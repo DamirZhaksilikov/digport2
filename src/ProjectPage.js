@@ -19,7 +19,7 @@ export default function ProjectPage() {
             {project.visual_content.map(item => {
                 return (<div>
                     {renderVisualContent(item)}
-                    <div className="project-content-description">{item.description}</div>
+                    <div className="project-content-description" dangerouslySetInnerHTML={{__html: item.description}} />
                 </div>)
             })}
         </div>

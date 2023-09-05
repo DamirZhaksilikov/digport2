@@ -79,7 +79,7 @@ export default function ProjectPreviewContainer(props) {
                     </div>
                 </div>
                 <div className='project-info-row2'>
-                    <div className='project-description'>{props.description}</div>
+                    <div className='project-description' dangerouslySetInnerHTML={{ __html: props.description}} />
                 </div>
             </div>
         </Link>
