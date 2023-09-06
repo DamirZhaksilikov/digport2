@@ -4,6 +4,7 @@
 }
 
 .navigation-link {
+  padding: 1px 3px 1px 3px;
   float: right;
   margin-right: 1.5vw;
   margin-top: 2.1vh;
