@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce86559e.css",
+    "main.css": "/static/css/main.beecbea3.css",
     "main.js": "/static/js/main.ef8e5761.js",
     "static/js/787.9e4fa5a3.chunk.js": "/static/js/787.9e4fa5a3.chunk.js",
     "static/media/fatherstephen_cover.mp4": "/static/media/fatherstephen_cover.071a718c7ef04e61d01e.mp4",
@@ -136,12 +136,12 @@
     "static/media/frame_20.jpg": "/static/media/frame_20.f670e090457ca1f0a66c.jpg",
     "static/media/frame_00.jpg": "/static/media/frame_00.a052c96f06c5095c59c4.jpg",
     "index.html": "/index.html",
-    "main.ce86559e.css.map": "/static/css/main.ce86559e.css.map",
+    "main.beecbea3.css.map": "/static/css/main.beecbea3.css.map",
     "main.ef8e5761.js.map": "/static/js/main.ef8e5761.js.map",
     "787.9e4fa5a3.chunk.js.map": "/static/js/787.9e4fa5a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce86559e.css",
+    "static/css/main.beecbea3.css",
     "static/js/main.ef8e5761.js"
   ]
 }
