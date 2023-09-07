@@ -1,57 +1,30 @@
+/* Mobile style for ProjectPreviewContainer */
 @media only screen and (max-width: 768px) {
     .project-preview-container {
         width: 95vw;
-        color: black;
-        text-decoration: none;
         margin-right: 2.5vw;
     }
-    
+
     .project-cover-image-container {
-        position: relative;
         height: calc(100vw * 2 / 3);
-    }
-
-    .project-cover-video {
-        width: 100vw;
-        display: inline-block;
-        z-index: 20;
-    }
-
-    .project-cover-video-hidden {
-        visibility: hidden;
     }
 
     .project-cover-image {
         width: 100vw;
-        display: inline-block;
-        position: absolute;
-    }
-
-    .project-cover-image-hidden {
-        visibility: hidden;
     }
 
     .project-info-container {
         margin-top: 5vh;
-        display: flex;
         word-spacing: -1px;
-
     }
 
     .project-title {
         margin-bottom: 2vh;
-        display: inline-block;
         font-size: 14px;
         letter-spacing: -0.5px;
     }
 
-    .hovering-project-title {
-        text-decoration: underline;
-    }
-
     .project-metadata-title {
-        margin-bottom: .2vh;
-        font-style: italic;
         width: 100%
     }
 
@@ -74,6 +47,7 @@
     }
 }
 
+/* Desktop style for ProjectPreviewContainer */
 @media only screen and (min-width: 769px) {
     .right-most-preview-container {
         margin-left: 1.5vw;
@@ -81,13 +55,7 @@
 
     .project-preview-container {
         margin-right: 1.5vw;
-        color: black;
-        text-decoration: none;
         width: calc(80vh * 1.5) !important;
-    }
-
-    .project-cover-image-container {
-        position: relative;
     }
 
     .project-cover-video {
@@ -102,8 +70,6 @@
 
     .project-cover-image {
         height: 80vh;
-        display: inline-block;
-        position: absolute;
     }
 
     .project-cover-image-hidden {
@@ -113,12 +79,10 @@
     .project-info-container {
         margin-top: 2vh;
         margin-bottom: 2vh;
-        display: flex;
     }
 
     .project-title {
         margin-bottom: 1.5vh;
-        display: inline-block;
     }
 
     .hovering-project-title {
@@ -135,7 +99,6 @@
 
     .project-metadata-title {
         margin-bottom: .2vh;
-        font-style: italic;
     }
 
     .project-info-row1 {
@@ -146,4 +109,31 @@
         width: 50%;
         float: right;
     }
+}
+
+.project-preview-container {
+    color: black;
+    text-decoration: none;
+}
+
+.project-cover-image-container {
+    position: relative;
+}
+
+.project-cover-image {
+    display: inline-block;
+    position: absolute;
+}
+
+.project-info-container {
+    display: flex;
+}
+
+.project-title {
+    display: inline-block;
+}
+
+.project-metadata-title {
+    margin-bottom: .2vh;
+    font-style: italic;
 }

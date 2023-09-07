@@ -1,56 +1,4 @@
-#about-page {
-    position: relative;
-}
-
-#scroll-markers-container {
-    position: relative;
-    display: flex;
-    height: 94vh;
-    width: 100vw;
-    z-index: 100;
-    overflow: hidden;
-}
-
-.scroll-marker {
-    width: 1.06382979vw;
-    height: 94vh;
-    z-index: 1000;
-}
-
-#about-page-content {
-    position: absolute;
-    margin-left: 1.5vw;
-    left: 0;
-    top: 0;
-}
-
-.cover-image {
-    position: absolute;
-}
-
-.hidden-cover-image {
-    visibility: hidden;
-}
-
-#cover-image-caption {
-    margin-top: 2.75vh;
-}
-
-
-#bio-main-text {
-    margin-top: 1vh;
-}
-
-#contact-links {
-    z-index: 10000;
-    position: absolute;
-    padding-bottom: 2.5vh;
-}
-
-.cover-image {
-    position: absolute;
-}
-
+/* Mobile style for AboutPage */
 @media only screen and (max-width: 768px) {
     #cover-images {
         width: 100vw;
@@ -61,15 +9,9 @@
         width: 100vw;
     }
 
-    #about-page-content {
-        margin-left: 0;
-    }
-
     #artist-bio-text {
         width: 95vw;
-        margin-top: 2vh;
-        margin-left: 2.5vw;
-        margin-right: 2.5vw;
+        margin: 2vh 2.5vw 0 2.5vw;
     }
 
     #cover-image-caption {
@@ -78,19 +20,45 @@
 
     #contact-links {
         margin-left: 2.5vw;
-        z-index: 10000;
-        position: absolute;
     }
 }
 
+/* Desktop style for AboutPage */
 @media only screen and (min-width: 768px) {
+    #scroll-markers-container {
+        position: relative;
+        display: flex;
+        height: 94vh;
+        width: 100vw;
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    .scroll-marker {
+        width: 1.06382979vw;
+        height: 94vh;
+        z-index: 1000;
+    }
+
     #cover-images {
         height: 55vh;
+        margin-top: 1.5vh;
     }
 
     .cover-image {
         height: 55vh;
-        margin-top: 1.5vh;
+        position: absolute;
+    }
+
+    .hidden-cover-image {
+        visibility: hidden;
+    }
+
+    #about-page-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: 1.5vw;
     }
 
     #artist-bio-text {
@@ -98,4 +66,24 @@
         margin-top: 2vh;
     }
 
+    #contact-links {
+        z-index: 10000;
+        position: absolute;
+    }
+}
+
+#about-page {
+    position: relative;
+}
+
+#cover-image-caption {
+    margin-top: 2.75vh;
+}
+
+#bio-main-text {
+    margin-top: 1vh;
+}
+
+#contact-links {
+    padding-bottom: 2.5vh;
 }
