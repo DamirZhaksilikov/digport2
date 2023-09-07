@@ -1,8 +1,13 @@
 @media only screen and (max-width: 768px) {
+    .right-most-preview-container {
+        margin-top: 25vh;
+    }
+    
     .project-preview-container {
         width: 95vw;
         color: black;
         text-decoration: none;
+        margin-right: 2.5vw;
     }
     
     .project-cover-image-container {
@@ -30,7 +35,7 @@
     }
 
     .project-info-container {
-        margin-top: 2vh;
+        margin-top: 5vh;
         display: flex;
         word-spacing: -1px;
 
@@ -68,7 +73,7 @@
         width: 60%;
         margin-left: 2.5vw;
         margin-right: 2.5vw;
-        margin-bottom: 5vh;
+        margin-bottom: 25vh;
     }
 }
 

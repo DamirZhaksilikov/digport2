@@ -29,21 +29,6 @@ export default function ProjectPreviewContainer(props) {
         }
     }
 
-    const metadataContent = <div className='project-metadata-container'>
-        <div className='project-metadata'>
-            <div className='project-metadata-title'>Year</div>
-            <div className='project-metadata-value'>{props.year}</div>
-        </div>
-        <div className='project-metadata'>
-            <div className='project-metadata-title'>Data Origin</div>
-            <div className='project-metadata-value'>{toCommaSeperateList(props.data_origin)}</div>
-        </div>
-        <div className='project-metadata'>
-            <div className='project-metadata-title'>Media</div>
-            <div className='project-metadata-value'>{toCommaSeperateList(props.forums)}</div>
-        </div>
-    </div>
-
     return (
         <Link to={'/projects/' + props.id}
             className={props.index === 0 ? "project-preview-container right-most-preview-container" : "project-preview-container"}
