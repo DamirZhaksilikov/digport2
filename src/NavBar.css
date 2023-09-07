@@ -17,7 +17,7 @@
   top: 0;
   position: sticky;
   display: flow-root;
-  z-index: 1000;
+  z-index: 99;
   
   background-color: white;
 }

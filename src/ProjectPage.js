@@ -4,6 +4,8 @@ import { toCommaSeperateList } from './lib/utils';
 import { Navigate, useLocation } from 'react-router-dom';
 import { projects } from './constants/project_constants';
 import { lowerCase } from 'lodash';
+import { useContext, useState } from 'react';
+import { WindowContext } from './App';
 
 export default function ProjectPage() {
     const location = useLocation();
@@ -11,42 +13,55 @@ export default function ProjectPage() {
     const projectId = pathValues[pathValues.length - 1];
     const project = getProject(projectId);
 
+    const browserWindow = useContext(WindowContext).browserWindow;
+    const initialTextDisplay = !browserWindow.isWidthBelowThreshhold;
+    const [isTextDisplayed, setIsTextDisplayed] = useState(initialTextDisplay);
+
+    const projectTitleCard = (<div>
+        <div id="project-page-name">
+            {project.name}
+            {project.isOnGoing && <div id="project-page-ongoing">{"currently ongoing"}</div>}
+        </div>
+        <div className="project-page-metadata">
+            <div className='project-metadata-entry'>
+                <div className='project-page-metadata-title'>Year</div>
+                <div className='project-page-metadata-value'>{project.year}</div>
+            </div>
+            <div className='project-metadata-entry'>
+                <div className='project-page-metadata-title'>Data origin</div>
+                <div className='project-page-metadata-value'>{toCommaSeperateList(project.data_origin)}</div>
+            </div>
+            <div className='project-metadata-entry'>
+                <div className='project-page-metadata-title'>Media</div>
+                <div className='project-page-metadata-value'>{toCommaSeperateList(project.forums)}</div>
+            </div>
+        </div></div>);
+
+    const projectDescription = <div id="project-page-description">
+        <div dangerouslySetInnerHTML={{ __html: project.long_description }} />
+    </div>;
+
     if (!project)
         return <Navigate to="/" replace />
 
     return (<div id="project-page">
         <div id="project-page-row1" className='project-page-row'>
-            {project.visual_content.map(item => {
-                return (<div>
+            {browserWindow.isWidthBelowThreshhold && <div>
+                {projectTitleCard}
+                <button id="project-description-toggle" onClick={() => { if (browserWindow.isWidthBelowThreshhold) setIsTextDisplayed(!isTextDisplayed) }}>{"Show project description"}</button>
+                {isTextDisplayed && projectDescription}
+            </div>}
+            {project.visual_content.map((item, i) => {
+                return (i >= 0 && <div>
                     {renderVisualContent(item)}
-                    <div className="project-content-description" dangerouslySetInnerHTML={{__html: item.description}} />
+                    <div className="project-content-description" dangerouslySetInnerHTML={{ __html: item.description }} />
                 </div>)
             })}
         </div>
-        <div id="project-page-row2" className='project-page-row'>
-            <div id="project-page-name">
-                {project.name}
-                {project.isOnGoing && <div id="project-page-ongoing">{"currently ongoing"}</div>}
-            </div>
-            <div id="project-page-metadata">
-                <div className='project-metadata-entry'>
-                    <div className='project-page-metadata-title'>Year</div>
-                    <div className='project-page-metadata-value'>{project.year}</div>
-                </div>
-                <div className='project-metadata-entry'>
-                    <div className='project-page-metadata-title'>Data origin</div>
-                    <div className='project-page-metadata-value'>{toCommaSeperateList(project.data_origin)}</div>
-                </div>
-                <div className='project-metadata-entry'>
-                    <div className='project-page-metadata-title'>Media</div>
-                    <div className='project-page-metadata-value'>{toCommaSeperateList(project.forums)}</div>
-                </div>
-            </div>
-            <div id="project-page-description">
-                <div dangerouslySetInnerHTML={{ __html: project.long_description }} />
-
-            </div>
-        </div>
+        {!browserWindow.isWidthBelowThreshhold && <div id="project-page-row2" className='project-page-row'>
+            {projectTitleCard}
+            {projectDescription}
+        </div>}
     </div>)
 }
 
