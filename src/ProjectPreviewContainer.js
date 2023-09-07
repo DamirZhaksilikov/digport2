@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './ProjectPreviewContainer.css'
-import { useState, useRef } from 'react';
+import { useState, useRef, useContext } from 'react';
 import { toCommaSeperateList } from './lib/utils';
 
 export default function ProjectPreviewContainer(props) {
@@ -29,9 +29,24 @@ export default function ProjectPreviewContainer(props) {
         }
     }
 
+    const metadataContent = <div className='project-metadata-container'>
+        <div className='project-metadata'>
+            <div className='project-metadata-title'>Year</div>
+            <div className='project-metadata-value'>{props.year}</div>
+        </div>
+        <div className='project-metadata'>
+            <div className='project-metadata-title'>Data Origin</div>
+            <div className='project-metadata-value'>{toCommaSeperateList(props.data_origin)}</div>
+        </div>
+        <div className='project-metadata'>
+            <div className='project-metadata-title'>Media</div>
+            <div className='project-metadata-value'>{toCommaSeperateList(props.forums)}</div>
+        </div>
+    </div>
+
     return (
-        <Link to={'/projects/' + props.id} 
-        className={props.isFirst ? "project-preview-container right-most-preview-container" : "project-preview-container"}
+        <Link to={'/projects/' + props.id}
+            className={props.index === 0 ? "project-preview-container right-most-preview-container" : "project-preview-container"}
             onMouseEnter={() => {
                 setHover({ isHovering: true, hasHovered: true });
                 handlePlayVideo();
@@ -43,7 +58,7 @@ export default function ProjectPreviewContainer(props) {
         >
             <div className='project-cover-image-container'>
                 <img className={hover.isHovering ? 'project-cover-image project-cover-image-hidden' : 'project-cover-image'} src={props.image_src} alt='props.image_src' />
-                <video ref={videoRef} className={hover.hasHovered ? 'project-cover-video' : 'project-cover-video project-cover-video-hidden'} muted loop>
+                <video playsInline ref={videoRef} className={hover.hasHovered ? 'project-cover-video' : 'project-cover-video project-cover-video-hidden'} muted loop>
                     <source src={props.video_src} type="video/mp4" />
                 </video>
 
@@ -62,7 +77,6 @@ export default function ProjectPreviewContainer(props) {
                             }
                         </div>
                     </div>
-
                     <div className='project-metadata-container'>
                         <div className='project-metadata'>
                             <div className='project-metadata-title'>Year</div>
@@ -79,7 +93,7 @@ export default function ProjectPreviewContainer(props) {
                     </div>
                 </div>
                 <div className='project-info-row2'>
-                    <div className='project-description' dangerouslySetInnerHTML={{ __html: props.description}} />
+                    <div className='project-description' dangerouslySetInnerHTML={{ __html: props.description }} />
                 </div>
             </div>
         </Link>

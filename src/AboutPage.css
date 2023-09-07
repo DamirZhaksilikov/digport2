@@ -24,14 +24,8 @@
     top: 0;
 }
 
-#cover-images {
-    height: 55vh;
-}
-
 .cover-image {
     position: absolute;
-    height: 55vh;
-    margin-top: 1.5vh;
 }
 
 .hidden-cover-image {
@@ -42,10 +36,6 @@
     margin-top: 2.75vh;
 }
 
-#artist-bio-text {
-    width: 55vw;
-    margin-top: 2vh;
-}
 
 #bio-main-text {
     margin-top: 1vh;
@@ -54,4 +44,52 @@
 #contact-links {
     z-index: 10000;
     position: absolute;
+}
+
+.cover-image {
+    position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+    #cover-images {
+        width: 100vw;
+    }
+
+    #about-page-content {
+        margin-left: 0;
+    }
+
+    #artist-bio-text {
+        width: 95vw;
+        margin-top: 2vh;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+
+    #cover-image-caption {
+        margin-left: 2.5vw;
+    }
+
+    #contact-links {
+        margin-left: 2.5vw;
+        z-index: 10000;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #cover-images {
+        height: 55vh;
+    }
+
+    .cover-image {
+        height: 55vh;
+        margin-top: 1.5vh;
+    }
+
+    #artist-bio-text {
+        width: 55vw;
+        margin-top: 2vh;
+    }
+
 }

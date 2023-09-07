@@ -3,7 +3,6 @@ import GulfWarIllnessCoverVideo from '../assets/gulf war illness/gulfwarillness_
 import GulfWarIllnessImage1 from '../assets/gulf war illness/web collection/gulfwarillness_image1.jpg'
 import GulfWarIllnessVideo1 from '../assets/gulf war illness/web collection/gulfwarillness_video1.mp4'
 import GulfWarIllnessVideo2 from '../assets/gulf war illness/web collection/gulfwarillness_video2.mp4'
-import GulfWarIllnessImage2 from '../assets/gulf war illness/web collection/gulfwarillness_image2.jpg'
 import GulfWarIllnessImage3 from '../assets/gulf war illness/web collection/gulfwarillness_image3.jpg'
 
 import FatherStephenCoverPhoto from '../assets/father stephen/fatherstephen_cover.png';

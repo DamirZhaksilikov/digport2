@@ -7,7 +7,7 @@ export default function WorksPage() {
         <div id="projects-previews-collection">
             {projects.map((p, i) => {
                 return (<ProjectPreviewContainer
-                    isFirst={i === 0}
+                    index={i}
                     id={p.id}
                     image_src={p.image_src}
                     video_src={p.video_src}

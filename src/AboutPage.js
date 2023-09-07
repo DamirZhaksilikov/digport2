@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './AboutPage.css';
 import { Link } from 'react-router-dom';
 import cv_pdf from './assets/general/CV-2023.06.pdf'
+import FacesVideo from '../src/assets/split_frames/icouldnthelpbutlook2.mp4'
+import { WindowContext } from './App';
+
 
 function importAll(r) {
     let sortedKeys = r.keys().sort()
@@ -17,6 +20,7 @@ const artistBioText = <div>Damir Zhaksilikov is a <i>web crawler</i>––ingest
 
 export default function AboutPage() {
     const [hoverIndex, setHoverIndex] = useState(93);
+    const browserWindow = useContext(WindowContext).browserWindow;
 
     return (<div id="about-page">
         <div id='scroll-markers-container'>
@@ -27,13 +31,19 @@ export default function AboutPage() {
             }
         </div>
         <div id="about-page-content">
-            <div id="cover-images">
+            {!browserWindow.isMobile && <div id="cover-images">
                 {
                     Object.keys(images).map((key, i) => {
                         return <img src={images[i]} key={i} className={hoverIndex === i ? 'cover-image' : 'cover-image hidden-cover-image'} alt='I can' t close my eyes />
                     })
                 }
-            </div>
+            </div>}
+
+            {browserWindow.isMobile && <video playsInline id='cover-images' muted="true" autoPlay loop>
+                <source src={FacesVideo} type="video/mp4" />
+            </video>
+            }
+
             <div id="cover-image-caption">
                 <i>I couldn't help but watch</i>
             </div>
@@ -47,7 +57,7 @@ export default function AboutPage() {
             <div id="contact-links">
                 <Link className='contact-link' to='mailto:damir.zhaksilikov@gmail.com' target='_blank'>damir.zhaksilikov@gmail.com</Link><br />
                 <br />
-                <a href={cv_pdf} target="_blank">CV</a><br/>
+                <a href={cv_pdf} target="_blank">CV</a><br />
                 <Link className='contact-link' to='https://www.are.na/damir-zhaksilikov/' target='_blank'>are.na</Link><br />
                 <Link className='contact-link' to='https://www.instagram.com/damirzhaksilikov/' target='_blank'>social</Link><br />
             </div>
