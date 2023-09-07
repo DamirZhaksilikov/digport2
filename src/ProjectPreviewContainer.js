@@ -2,13 +2,15 @@ import { Link } from 'react-router-dom';
 import './ProjectPreviewContainer.css'
 import { useState, useRef, useContext } from 'react';
 import { toCommaSeperateList } from './lib/utils';
+import { WindowContext } from './App';
 
 export default function ProjectPreviewContainer(props) {
     const [hover, setHover] = useState({ isHovering: false, hasHovered: false });
+    const browserWindow = useContext(WindowContext).browserWindow;
     const videoRef = useRef(null);
 
     const handlePlayVideo = () => {
-        if (videoRef && videoRef.current) {
+        if (videoRef && videoRef.current && !browserWindow.isMobile) {
             var playPromise = videoRef.current.play();
 
             if (playPromise !== undefined) {
@@ -19,7 +21,7 @@ export default function ProjectPreviewContainer(props) {
     }
 
     const handlePauseVideo = () => {
-        if (videoRef && videoRef.current) {
+        if (videoRef && videoRef.current && !browserWindow.isMobile) {
             var pausePromise = videoRef.current.pause();
 
             if (pausePromise !== undefined) {
@@ -33,21 +35,23 @@ export default function ProjectPreviewContainer(props) {
         <Link to={'/projects/' + props.id}
             className={props.index === 0 ? "project-preview-container right-most-preview-container" : "project-preview-container"}
             onMouseEnter={() => {
-                setHover({ isHovering: true, hasHovered: true });
-                handlePlayVideo();
+                if(!browserWindow.isMobile) {
+                    setHover({ isHovering: true, hasHovered: true });
+                    handlePlayVideo();
+                }
             }}
             onMouseLeave={() => {
-                setHover({ isHovering: false, hasHovered: hover.hasHovered });
-                handlePauseVideo();
+                if(!browserWindow.isMobile) {
+                    setHover({ isHovering: false, hasHovered: hover.hasHovered });
+                    handlePauseVideo();
+                }
             }}
         >
             <div className='project-cover-image-container'>
-                <img className={hover.isHovering ? 'project-cover-image project-cover-image-hidden' : 'project-cover-image'} src={props.image_src} alt='props.image_src' />
-                <video playsInline ref={videoRef} className={hover.hasHovered ? 'project-cover-video' : 'project-cover-video project-cover-video-hidden'} muted loop>
+                <img className={hover.isHovering && !browserWindow.isMobile ? 'project-cover-image project-cover-image-hidden' : 'project-cover-image'} src={props.image_src} alt='props.image_src' />
+                {!browserWindow.isMobile && <video playsInline ref={videoRef} className={hover.hasHovered ? 'project-cover-video' : 'project-cover-video project-cover-video-hidden'} muted loop>
                     <source src={props.video_src} type="video/mp4" />
-                </video>
-
-
+                </video>}
             </div>
             <div className='project-info-container'>
                 <div className='project-info-row1'>

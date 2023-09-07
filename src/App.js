@@ -6,6 +6,7 @@ import WorksPage from './WorksPage';
 import AboutPage from './AboutPage';
 import ProjectPage from './ProjectPage';
 import { useState, useEffect } from 'react';
+import { isMobile } from 'react-device-detect';
 
 export const WindowContext = React.createContext(null);
 
@@ -14,14 +15,15 @@ export default function App() {
     {
       height: window.innerHeight,
       width: window.innerWidth,
-      isMobile: isMobileWindow(window.innerWidth)
+      isMobile: isMobile,
+      isWidthBelowThreshhold: isWidthBelowThreshhold(window.innerWidth)
     }
   );
 
-  function isMobileWindow(width) { return width <= 768 };
+  function isWidthBelowThreshhold(width) { return width <= 768 };
 
   function handleWindowSizeChange() {
-    setBrowserWindow({ window: window.innerWidth, height: window.innerHeight, isMobile: isMobileWindow(window.innerWidth) });
+    setBrowserWindow({ window: window.innerWidth, height: window.innerHeight, isMobile: isMobile, isWidthBelowThreshhold: isWidthBelowThreshhold(window.innerWidth) });
   }
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange);

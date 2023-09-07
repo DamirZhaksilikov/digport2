@@ -54,6 +54,11 @@
 @media only screen and (max-width: 768px) {
     #cover-images {
         width: 100vw;
+        height: calc(100vw * 352 / 624)
+    }
+
+    .cover-image {
+        width: 100vw;
     }
 
     #about-page-content {

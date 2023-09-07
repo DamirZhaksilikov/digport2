@@ -1,8 +1,4 @@
 @media only screen and (max-width: 768px) {
-    .right-most-preview-container {
-        margin-top: 25vh;
-    }
-    
     .project-preview-container {
         width: 95vw;
         color: black;
@@ -12,6 +8,7 @@
     
     .project-cover-image-container {
         position: relative;
+        height: calc(100vw * 2 / 3);
     }
 
     .project-cover-video {
@@ -73,7 +70,7 @@
         width: 60%;
         margin-left: 2.5vw;
         margin-right: 2.5vw;
-        margin-bottom: 25vh;
+        margin-bottom: 15vh;
     }
 }
 
