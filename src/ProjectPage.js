@@ -20,8 +20,6 @@ export default function ProjectPage() {
     if (!project)
         return <Navigate to="/" replace />
 
-
-
     const projectTitleCard = (<div>
         <div id="project-page-name">
             {project.name}

@@ -6,7 +6,6 @@ import WorksPage from './WorksPage';
 import AboutPage from './AboutPage';
 import ProjectPage from './ProjectPage';
 import { useState, useEffect } from 'react';
-import { isMobile } from 'react-device-detect';
 
 export const WindowContext = React.createContext(null);
 export const RESIZE_THRESHOLD = 768;
@@ -17,7 +16,7 @@ export default function App() {
     {
       height: window.innerHeight,
       width: window.innerWidth,
-      isMobileDetected: isMobile,
+      isMobileDetected: 'ontouchstart' in window || navigator.msMaxTouchPoints,
       isWidthBelowThreshold: isWidthBelowThreshold(window.innerWidth)
     }
   );
@@ -25,7 +24,7 @@ export default function App() {
   function isWidthBelowThreshold(width) { return width <= RESIZE_THRESHOLD };
 
   function handleWindowSizeChange() {
-    setBrowserWindow({ window: window.innerWidth, height: window.innerHeight, isMobile: isMobile, isWidthBelowThreshold: isWidthBelowThreshold(window.innerWidth) });
+    setBrowserWindow({ window: window.innerWidth, height: window.innerHeight, isMobile: browserWindow.isMobile, isWidthBelowThreshold: isWidthBelowThreshold(window.innerWidth) });
   }
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange);
