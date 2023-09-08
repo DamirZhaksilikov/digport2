@@ -48,11 +48,11 @@ export default function ProjectPage() {
         <div id="project-page-row1" className='project-page-row'>
             {browserWindow.isWidthBelowThreshhold && <div>
                 {projectTitleCard}
-                <button id="project-description-toggle" onClick={() => { if (browserWindow.isWidthBelowThreshhold) setIsTextDisplayed(!isTextDisplayed) }}>{"Show project description"}</button>
+                <button id="project-description-toggle" onClick={() => { if (browserWindow.isWidthBelowThreshhold) setIsTextDisplayed(!isTextDisplayed) }}>{isTextDisplayed ? "Hide project description" : "Show project description"}</button>
                 {isTextDisplayed && projectDescription}
             </div>}
             {project.visual_content.map((item, i) => {
-                return (i >= 0 && <div>
+                return (i >= 0 && <div className={(project.visual_content.length - 1 === i) ? "trailing-project-page-content" : ""}>
                     {renderVisualContent(item)}
                     <div className="project-content-description" dangerouslySetInnerHTML={{ __html: item.description }} />
                 </div>)
