@@ -8,6 +8,7 @@ export default function WorksPage() {
             {projects.map((p, i) => {
                 return (<ProjectPreviewContainer
                     index={i}
+                    key={p.id}
                     id={p.id}
                     image_src={p.image_src}
                     video_src={p.video_src}

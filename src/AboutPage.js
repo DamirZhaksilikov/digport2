@@ -23,23 +23,23 @@ export default function AboutPage() {
     const browserWindow = useContext(WindowContext).browserWindow;
 
     return (<div id="about-page">
-        <div id='scroll-markers-container'>
+        {!browserWindow.isMobileDetected && <div id='scroll-markers-container'>
             {
                 Object.keys(images).map((key, i) => {
-                    return <div id={key} className='scroll-marker' onMouseEnter={() => { setHoverIndex(i) }} />
+                    return <div key={key} id={key} className='scroll-marker' onMouseEnter={() => { setHoverIndex(i) }} />
                 })
             }
-        </div>
+        </div>}
         <div id="about-page-content">
             {!browserWindow.isMobileDetected && <div id="cover-images">
                 {
                     Object.keys(images).map((key, i) => {
-                        return <img src={images[i]} key={i} className={hoverIndex === i ? 'cover-image' : 'cover-image hidden-cover-image'} alt='I can' t close my eyes />
+                        return <img src={images[i]} key={i} className={hoverIndex === i ? 'cover-image' : 'cover-image hidden-cover-image'} alt="I cant close my eyes" />
                     })
                 }
             </div>}
 
-            {browserWindow.isMobileDetected && <video playsInline id='cover-images' muted="true" autoPlay loop>
+            {browserWindow.isMobileDetected && <video playsInline id='cover-images-video' muted="true" autoPlay loop>
                 <source src={FacesVideo} type="video/mp4" />
             </video>
             }

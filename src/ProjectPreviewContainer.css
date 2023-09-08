@@ -13,6 +13,24 @@
         width: 100vw;
     }
 
+    .project-cover-video {
+        width: 100vw;
+        display: inline-block;
+        z-index: 20;
+    }
+
+    .project-cover-video-hidden {
+        visibility: hidden;
+    }
+
+    .project-cover-image {
+        width: 100vw;
+    }
+
+    .project-cover-image-hidden {
+        visibility: hidden;
+    }
+
     .project-info-container {
         margin-top: 5vh;
         word-spacing: -1px;
