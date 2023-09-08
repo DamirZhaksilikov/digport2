@@ -31,7 +31,7 @@ export default function AboutPage() {
             }
         </div>
         <div id="about-page-content">
-            {!browserWindow.isMobile && <div id="cover-images">
+            {!browserWindow.isMobileDetected && <div id="cover-images">
                 {
                     Object.keys(images).map((key, i) => {
                         return <img src={images[i]} key={i} className={hoverIndex === i ? 'cover-image' : 'cover-image hidden-cover-image'} alt='I can' t close my eyes />
@@ -39,7 +39,7 @@ export default function AboutPage() {
                 }
             </div>}
 
-            {browserWindow.isMobile && <video playsInline id='cover-images' muted="true" autoPlay loop>
+            {browserWindow.isMobileDetected && <video playsInline id='cover-images' muted="true" autoPlay loop>
                 <source src={FacesVideo} type="video/mp4" />
             </video>
             }

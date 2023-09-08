@@ -9,21 +9,23 @@ import { useState, useEffect } from 'react';
 import { isMobile } from 'react-device-detect';
 
 export const WindowContext = React.createContext(null);
+export const RESIZE_THRESHOLD = 768; 
 
 export default function App() {
+
   const [browserWindow, setBrowserWindow] = useState(
     {
       height: window.innerHeight,
       width: window.innerWidth,
-      isMobile: isMobile,
-      isWidthBelowThreshhold: isWidthBelowThreshhold(window.innerWidth)
+      isMobileDetected: isMobile,
+      isWidthBelowThreshold: isWidthBelowThreshold(window.innerWidth)
     }
   );
 
-  function isWidthBelowThreshhold(width) { return width <= 768 };
+  function isWidthBelowThreshold(width) { return width <= RESIZE_THRESHOLD };
 
   function handleWindowSizeChange() {
-    setBrowserWindow({ window: window.innerWidth, height: window.innerHeight, isMobile: isMobile, isWidthBelowThreshhold: isWidthBelowThreshhold(window.innerWidth) });
+    setBrowserWindow({ window: window.innerWidth, height: window.innerHeight, isMobile: isMobile, isWidthBelowThreshold: isWidthBelowThreshold(window.innerWidth) });
   }
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange);

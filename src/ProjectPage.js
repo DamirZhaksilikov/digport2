@@ -14,7 +14,7 @@ export default function ProjectPage() {
     const project = getProject(projectId);
 
     const browserWindow = useContext(WindowContext).browserWindow;
-    const initialTextDisplay = !browserWindow.isWidthBelowThreshhold;
+    const initialTextDisplay = !browserWindow.isWidthBelowThreshold;
     const [isTextDisplayed, setIsTextDisplayed] = useState(initialTextDisplay);
 
     const projectTitleCard = (<div>
@@ -46,9 +46,9 @@ export default function ProjectPage() {
 
     return (<div id="project-page">
         <div id="project-page-row1" className='project-page-row'>
-            {browserWindow.isWidthBelowThreshhold && <div>
+            {browserWindow.isWidthBelowThreshold && <div>
                 {projectTitleCard}
-                <button id="project-description-toggle" onClick={() => { if (browserWindow.isWidthBelowThreshhold) setIsTextDisplayed(!isTextDisplayed) }}>{isTextDisplayed ? "Hide project description" : "Show project description"}</button>
+                <button id="project-description-toggle" onClick={() => { if (browserWindow.isWidthBelowThreshold) setIsTextDisplayed(!isTextDisplayed) }}>{isTextDisplayed ? "Hide project description" : "Show project description"}</button>
                 {isTextDisplayed && projectDescription}
             </div>}
             {project.visual_content.map((item, i) => {
@@ -58,7 +58,7 @@ export default function ProjectPage() {
                 </div>)
             })}
         </div>
-        {!browserWindow.isWidthBelowThreshhold && <div id="project-page-row2" className='project-page-row'>
+        {!browserWindow.isWidthBelowThreshold && <div id="project-page-row2" className='project-page-row'>
             {projectTitleCard}
             {projectDescription}
         </div>}
