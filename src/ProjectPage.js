@@ -8,14 +8,19 @@ import { useContext, useState } from 'react';
 import { WindowContext } from './App';
 
 export default function ProjectPage() {
+    const browserWindow = useContext(WindowContext).browserWindow;
+    const initialTextDisplay = !browserWindow.isWidthBelowThreshold;
+    const [isTextDisplayed, setIsTextDisplayed] = useState(initialTextDisplay);
+   
     const location = useLocation();
     const pathValues = location.pathname.split("/");
     const projectId = pathValues[pathValues.length - 1];
     const project = getProject(projectId);
 
-    const browserWindow = useContext(WindowContext).browserWindow;
-    const initialTextDisplay = !browserWindow.isWidthBelowThreshold;
-    const [isTextDisplayed, setIsTextDisplayed] = useState(initialTextDisplay);
+    if (!project)
+        return <Navigate to="/" replace />
+
+
 
     const projectTitleCard = (<div>
         <div id="project-page-name">
@@ -40,9 +45,6 @@ export default function ProjectPage() {
     const projectDescription = <div id="project-page-description">
         <div dangerouslySetInnerHTML={{ __html: project.long_description }} />
     </div>;
-
-    if (!project)
-        return <Navigate to="/" replace />
 
     return (<div id="project-page">
         <div id="project-page-row1" className='project-page-row'>

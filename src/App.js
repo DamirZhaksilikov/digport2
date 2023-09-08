@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import NavBar from './NavBar';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import WorksPage from './WorksPage';
 import AboutPage from './AboutPage';
 import ProjectPage from './ProjectPage';
@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 import { isMobile } from 'react-device-detect';
 
 export const WindowContext = React.createContext(null);
-export const RESIZE_THRESHOLD = 768; 
+export const RESIZE_THRESHOLD = 768;
 
 export default function App() {
 
@@ -43,6 +43,7 @@ export default function App() {
           <Route exact path="/works" Component={WorksPage} />
           <Route exact path="/about" Component={AboutPage} />
           <Route path='/projects/*' Component={ProjectPage} />
+          <Route path="*" element={<Navigate to="/" replace={true} />}/>
         </Routes>
       </WindowContext.Provider>
     </div>
