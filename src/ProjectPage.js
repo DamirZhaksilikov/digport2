@@ -13,9 +13,7 @@ export default function ProjectPage() {
     const [isTextDisplayed, setIsTextDisplayed] = useState(initialTextDisplay);
    
     const location = useLocation();
-    const pathValues = location.pathname.split("/");
-    const projectId = pathValues[pathValues.length - 1];
-    const project = getProject(projectId);
+    const project = getProject(location);
 
     if (!project)
         return <Navigate to="/" replace />
@@ -65,7 +63,19 @@ export default function ProjectPage() {
     </div>)
 }
 
-function getProject(id) {
+function getProject(location) {
+    const pathValues = location.pathname.split("/");
+    let idPosition = pathValues.length - 1;
+
+    if(!pathValues[pathValues.length - 1]) {
+        if(pathValues.length < 2) {
+            return null;
+        }
+
+        idPosition = pathValues.length - 2;
+    } 
+
+    const id = pathValues[idPosition];
     const match = projects.find(p => lowerCase(id) === lowerCase(p.id));
     return match ? match : null;
 }
