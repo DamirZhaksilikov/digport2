@@ -41,7 +41,13 @@ export default function App() {
           <Route exact path="/" Component={WorksPage} />
           <Route exact path="/works" Component={WorksPage} />
           <Route exact path="/about" Component={AboutPage} />
-          <Route path='/projects/*' Component={ProjectPage} />
+          
+          <Route path='/projects/gulf-war-illness' Component={ProjectPage} />
+          <Route path='projects/father-stephen' Component={ProjectPage} />
+          <Route path='/projects/mother' Component={ProjectPage} />
+          <Route path='/projects/we-do-it-all-the-time' Component={ProjectPage} />
+          <Route path='/projects/doll-house' Component={ProjectPage} />
+
           <Route path="*" element={<Navigate to="/" replace={true} />}/>
         </Routes>
       </WindowContext.Provider>
