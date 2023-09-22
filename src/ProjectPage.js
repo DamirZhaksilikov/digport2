@@ -11,7 +11,7 @@ export default function ProjectPage() {
     const browserWindow = useContext(WindowContext).browserWindow;
     const initialTextDisplay = !browserWindow.isWidthBelowThreshold;
     const [isTextDisplayed, setIsTextDisplayed] = useState(initialTextDisplay);
-   
+
     const location = useLocation();
     const project = getProject(location);
 
@@ -64,18 +64,13 @@ export default function ProjectPage() {
 }
 
 function getProject(location) {
-    const pathValues = location.pathname.split("/");
-    let idPosition = pathValues.length - 1;
+    let pathname = location.pathname;
+    pathname = pathname
+        .replace(/\/+/g, '/') // replace consecutive slashes with a single slash
+        .replace(/\/+$/, ''); // remove trailing slashes
 
-    if(!pathValues[pathValues.length - 1]) {
-        if(pathValues.length < 2) {
-            return null;
-        }
-
-        idPosition = pathValues.length - 2;
-    } 
-
-    const id = pathValues[idPosition];
+    const pathValues = pathname.split("/");
+    const id = pathValues[pathValues.length - 1];
     const match = projects.find(p => lowerCase(id) === lowerCase(p.id));
     return match ? match : null;
 }
