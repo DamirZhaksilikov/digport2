@@ -1,6 +1,6 @@
-import GulfWarIllnessCoverPhoto from '../assets/gulf war illness/gulfwarillness_cover.png';
+import GulfWarIllnessCoverPhoto from '../assets/gulf war illness/gulfwarillness_cover.jpg';
 import GulfWarIllnessCoverVideo from '../assets/gulf war illness/gulfwarillness_cover.mp4';
-import GulfWarIllnessImage1 from '../assets/gulf war illness/web collection/gulfwarillness_image1.jpg'
+import GulfWarIllnessImage1 from '../assets/gulf war illness/web collection/gulfwarillness_1_1.jpg'
 import GulfWarIllnessVideo1 from '../assets/gulf war illness/web collection/gulfwarillness_video1.mp4'
 import GulfWarIllnessVideo2 from '../assets/gulf war illness/web collection/gulfwarillness_video2.mp4'
 import GulfWarIllnessImage3 from '../assets/gulf war illness/web collection/gulfwarillness_image3.jpg'
