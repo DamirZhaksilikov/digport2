@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.53cc1869.css",
-    "main.js": "/static/js/main.f331047a.js",
+    "main.js": "/static/js/main.e0b8e083.js",
     "static/js/787.9e4fa5a3.chunk.js": "/static/js/787.9e4fa5a3.chunk.js",
     "static/media/fatherstephen_cover.mp4": "/static/media/fatherstephen_cover.071a718c7ef04e61d01e.mp4",
     "static/media/wedoitallthetime_cover.mp4": "/static/media/wedoitallthetime_cover.29737e92a4b1f4eb72e5.mp4",
@@ -10,10 +10,11 @@
     "static/media/wedoitallthetime_cover.jpg": "/static/media/wedoitallthetime_cover.5d5f5c29eba7e82e6f46.jpg",
     "static/media/dollhouse_cover.mp4": "/static/media/dollhouse_cover.5c5265d94bed70f44941.mp4",
     "static/media/sing-about-me_im-dying-of-thirst.pdf": "/static/media/sing-about-me_im-dying-of-thirst.8e8a246e273c611ec646.pdf",
-    "static/media/gulfwarillness_cover.png": "/static/media/gulfwarillness_cover.984a932664758a81075b.png",
     "static/media/gulfwarillness_video1.mp4": "/static/media/gulfwarillness_video1.436f4398e1032761e1a5.mp4",
-    "static/media/fatherstephen_cover.png": "/static/media/fatherstephen_cover.888d2d8296afcb7aa7b4.png",
     "static/media/icouldnthelpbutlook2.mp4": "/static/media/icouldnthelpbutlook2.835af818e676828a6dda.mp4",
+    "static/media/gulfwarillness_1_1.jpg": "/static/media/gulfwarillness_1_1.911f3ca8c0c8f9c21613.jpg",
+    "static/media/gulfwarillness_cover.jpg": "/static/media/gulfwarillness_cover.911f3ca8c0c8f9c21613.jpg",
+    "static/media/fatherstephen_cover.png": "/static/media/fatherstephen_cover.d7dc557991fedb1fae40.png",
     "static/media/gulfwarillness_video2.mp4": "/static/media/gulfwarillness_video2.f20874334996bc1f379e.mp4",
     "static/media/dollhouse_cover.png": "/static/media/dollhouse_cover.220704f1bdb7550069f3.png",
     "static/media/CV-2023.06.pdf": "/static/media/CV-2023.06.4eea869e8fd5a353ef95.pdf",
@@ -25,7 +26,6 @@
     "static/media/wdiatt_image1.jpg": "/static/media/wdiatt_image1.c5824d922f8e3dbdb532.jpg",
     "static/media/fatherstephen_image3.jpg": "/static/media/fatherstephen_image3.0995b1b9be38f82d100e.jpg",
     "static/media/dollhouse_image8.jpg": "/static/media/dollhouse_image8.fb22d124d8d7841e12b4.jpg",
-    "static/media/gulfwarillness_image1.jpg": "/static/media/gulfwarillness_image1.80dcc89360396fa67caf.jpg",
     "static/media/dollhouse_image2.jpg": "/static/media/dollhouse_image2.8b00742c74927832ef10.jpg",
     "static/media/wdiatt_image3.jpg": "/static/media/wdiatt_image3.0adcf28a6bc7b3319166.jpg",
     "static/media/dollhouse_image3.jpg": "/static/media/dollhouse_image3.26c1f23adc8d5cf4f8ff.jpg",
@@ -137,11 +137,11 @@
     "static/media/frame_00.jpg": "/static/media/frame_00.a052c96f06c5095c59c4.jpg",
     "index.html": "/index.html",
     "main.53cc1869.css.map": "/static/css/main.53cc1869.css.map",
-    "main.f331047a.js.map": "/static/js/main.f331047a.js.map",
+    "main.e0b8e083.js.map": "/static/js/main.e0b8e083.js.map",
     "787.9e4fa5a3.chunk.js.map": "/static/js/787.9e4fa5a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53cc1869.css",
-    "static/js/main.f331047a.js"
+    "static/js/main.e0b8e083.js"
   ]
 }
