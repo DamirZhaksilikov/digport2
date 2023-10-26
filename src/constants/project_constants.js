@@ -2,8 +2,8 @@ import GulfWarIllnessCoverPhoto from '../assets/gulf war illness/gulfwarillness_
 import GulfWarIllnessCoverVideo from '../assets/gulf war illness/gulfwarillness_cover.mp4';
 import GulfWarIllnessImage1 from '../assets/gulf war illness/web collection/gulfwarillness_1_1.jpg'
 import GulfWarIllnessVideo1 from '../assets/gulf war illness/web collection/gulfwarillness_video1.mp4'
-import GulfWarIllnessVideo2 from '../assets/gulf war illness/web collection/gulfwarillness_video2.mp4'
 import GulfWarIllnessImage3 from '../assets/gulf war illness/web collection/gulfwarillness_image3.jpg'
+import GulfWarIllnessImage4 from '../assets/gulf war illness/web collection/gulfwarillness_image4.jpg'
 
 import FatherStephenCoverPhoto from '../assets/father stephen/fatherstephen_cover.png';
 import FatherStephenCoverVideo from '../assets/father stephen/fatherstephen_cover.mp4';
@@ -11,6 +11,7 @@ import FatherStephenImage1 from '../assets/father stephen/web collection/fathers
 import FatherStephenImage2 from '../assets/father stephen/web collection/fatherstephen_image2.jpg';
 import FatherStephenImage3 from '../assets/father stephen/web collection/fatherstephen_image3.jpg';
 import FatherStephenImage4 from '../assets/father stephen/web collection/fatherstephen_image4.jpg';
+import FatherStephenImage5 from '../assets/father stephen/web collection/fatherstephen_image5.jpg';
 
 import MotherCoverPhoto from '../assets/mother/mother_cover.jpg';
 import MotherCoverVideo from '../assets/mother/mother_cover.mp4';
@@ -24,6 +25,7 @@ import WeDoItAllTheTimeImage3 from '../assets/We do it all the time/web collecti
 import WeDoItAllTheTimeImage6 from '../assets/We do it all the time/web collection/wdiatt_image6.jpg';
 import WeDoItAllTheTimeImage7 from '../assets/We do it all the time/web collection/wdiatt_image7.jpg';
 import WeDoItAllTheTimeImage8 from '../assets/We do it all the time/web collection/wdiatt_image8.jpg';
+import WeDoItAllTheTimeImage9 from '../assets/We do it all the time/web collection/wdiatt_image9.jpg';
 
 import SingAboutMeImDyingOfThirst_pdf from '../assets/We do it all the time/web collection/sing-about-me_im-dying-of-thirst.pdf';
 
@@ -66,7 +68,7 @@ export const projects = [
             },
             {
                 content: GulfWarIllnessVideo3,
-                description: "Early draft of the film component in <i>Gulf War Illness</i>. In its current form, this essay-film explores how respiratory systems in Yuma and Iraq face parallel precarity as a result of analogous climate hostilities and nearby military activity. Moreover, given this shared experience, the film highlights how current climate change models expose a morbid irony in the United States military’s dependence on Yuma’s climate to produce weapons which have historically decimated Baghdad and greater Iraq.",
+                description: "Early draft of the film component in <i>Gulf War Illness</i>. In its current form, this essay-film explores how respiratory systems in Yuma and Iraq face parallel precarity as a result of analogous climate hostilities and nearby military activity. Given this shared experience, the film highlights how current climate change models expose a morbid irony in the ways in which Yuma’s climate has been leveraged to build weapons which have historically decimated Baghdad.",
                 type: "vimeo-video"
             },
             {
@@ -75,15 +77,15 @@ export const projects = [
                 type: "muted-video"
             },
             {
-                src: GulfWarIllnessVideo2,
-                description: "Test run of the dust aggravation chamber and ventilator prototypes",
-                type: "muted-video",
-            },
-            {
                 src: GulfWarIllnessImage3,
-                description: "Part of this project has been downloading, parsing, and sorting existing declassified military research from YPG. Pertinent topics have been: analogous climates, management of desert hostilities, as well as innovation in response to these hostilities, to name a few. This has produced somewhat of an archive. Next phases in this research would be evaluating the relevance and application of this research for regular folks, as well as, the channels for such documents to be sourced, meaningfully archived and dispersed. Of course, this extends beyond the desert, where analogous climates exist in numerous global contexts.",
+                description: "Part of this project has included downloading, parsing, and sorting existing declassified military research from YPG. Pertinent topics have been: analogous climates, management of desert hostilities, as well as innovation in response to these hostilities, to name a few. This has produced a baseline archive of documents, which I am currently creating a meaningful archive-structure and tagging system for. Next phases in this research would be evaluating the relevance and application of this research for regular individuals, as well as, additional channels for such documents to be sourced and eventually dispersed. Of course, this extends beyond the desert, where analogous climates exist in numerous global contexts. At its core, this project explores how such assets can be leveraged to produce mutualistic computation where the vulnerable in many regions become tightly networked beneficiaries, rather than in favor of a single despot such as the US military.",
                 type: "image"
             },
+            {
+                src: GulfWarIllnessImage4,
+                description: "There are various documented military technologies within this growing archive of research used to track dust and model its impact, including GIS modeling systems. As part of the next steps of this research I am exploring the potential value in reframing these technologies for general use.",
+                type: "image"
+            }
 
         ]
     },
@@ -97,7 +99,7 @@ export const projects = [
         data_origin: ["Chicago, USA"],
         forums: ["AV sculpture", "Language model"],
         description: "In the early 2000s, Father Stephen Lesniewski, a relatively unknown Chicago priest, used the voice recording of a child and a stack of CD-ROMs to create what is now a viral anti-abortion ‘character’. In this installation, a language model strips the imagined reality of Lesniewski’s rhetoric––one dependent on an emotional appeal from a character that could never be real.",
-        long_description: "<p>Father Stephen Lesniewski is a Chicago-based priest and ardent abortion access opponent who has been active since the early 1990s. Though relatively unknown, Lesniewski’s name appears alongside the earliest mentions online of the “Letter from an Unborn Child”––a viral form of anti-abortion content which is frequently shared amongst right-wing circles. The “letter” is written from the perspective of an aborted child speaking to its mother.</p><p><a href=\"https://wng.org/articles/letter-from-an-aborted-child-1617287857\" target=\"_blank\">According to a number of evangelical journals,</a> this letter was written by the priest or a member of his parish in the early 2000s. Shortly thereafter, Lesniewski recorded an eight year old child reading the letter and began distributing CD copies of this audio outside of abortion clinics. The audio is disturbing, creating a character that, at its core, effectively masks its middle-aged author. </p><p>In the decades since, <a href=\"https://www.youtube.com/@fatherstephen6925/videos\" target=\"_blank\">Lesniewski has also recorded and uploaded dozens of digital sermons to his YouTube channel.</a> Each video, running nearly half an hour, is full of gaffes, non sequiturs, unintelligible comments and factual errors. They are unlike the audio recording of the “Letter from the Unborn Child,” which is to say they don’t conceal Lesniewski’s voice behind a character, instead presenting the priest and his ideologies bare.</p><p>This installation is an explicit representation of how Lesniewski projected his incoherent oration onto an illusory character––one which he depended on for emotional appeal. Here, a hyper-realistic robot baby/doll sits in front of a television playing Lesniewski’s sermons and, using language processing, simplifies statements from the sermons into similar ones which are found in the “Letter from an Unborn Child.”</p><p>The letter and the priest's manipulation of it signifies a rudimentary prelude to the current landscape of methods used by political operatives. Namely, in which content production and technology are used beyond misinformation, but to achieve emotional appeal by distorting the very nature of reality––creating an <i>imaginary</i> under which their arguments are more tenable. With the recording of a child, the imaginary that Lesniewski created was the existence of “Unborn Child” itself, which having never been born, could only ever have <i>truly lived</i> in his dreams. Today, this kind of reality-production has exponentiated, occurring at the high octane churn of content production––where audiences are immersed in imaginaries which have only grown in sophistication since Lesniewski.</p>",
+        long_description: "<p>Father Stephen Lesniewski is a Chicago-based priest and ardent abortion access opponent who has been active since the early 1990s. Though relatively unknown, Lesniewski’s name appears alongside the earliest mentions online of the “Letter from an Unborn Child”––a viral form of anti-abortion content which is frequently shared amongst right-wing circles. The “letter” is written from the perspective of an aborted child speaking to its mother.</p><p><a href=\"https://wng.org/articles/letter-from-an-aborted-child-1617287857\" target=\"_blank\">According to a number of evangelical journals,</a> this letter was written by the priest or a member of his parish in the early 2000s. Shortly thereafter, Lesniewski recorded an eight year old child reading the letter and began distributing CD copies of this audio outside of abortion clinics. The audio is disturbing, creating a character that, at its core, effectively masks its middle-aged author. </p><p>In the decades since, <a href=\"https://www.youtube.com/@fatherstephen6925/videos\" target=\"_blank\">Lesniewski has also recorded and uploaded dozens of digital sermons to his YouTube channel.</a> Each video, running nearly half an hour, is full of gaffes, non sequiturs, unintelligible comments and factual errors. They are unlike the audio recording of the “Letter from the Unborn Child,” which is to say they don’t conceal Lesniewski’s voice behind a character, instead presenting the priest and his ideologies bare.</p><p>This installation is an explicit representation of how Lesniewski projected his incoherent oration onto an illusory character––one which he depended on for emotional appeal. Here, a hyper-realistic  baby/doll––representing the fictional character Stephen Lesniewski created––watches Lesniewski’s sermons on a television and translates them into similar phrases from the “Letter from an Unborn Child.” This works through a call and response system, where the baby actively listens for phrases and responds using Natural Language Processing semantic matching techniques.</p><p>The letter and the priest's manipulation of it signifies a rudimentary prelude to the current landscape of methods used by political operatives. Namely, in which content production and technology are used beyond misinformation, but to achieve emotional appeal by distorting the very nature of reality––creating an <i>imaginary</i> under which their arguments are more tenable. With the recording of a child, the imaginary that Lesniewski created was the existence of “Unborn Child” itself, which having never been born, could only ever have <i>truly lived</i> in his dreams. Today, this kind of reality-production has exponentiated, occurring at the high octane churn of content production––where audiences are immersed in imaginaries which have only grown in sophistication since Lesniewski.</p>",
         visual_content: [
             {
                 src: FatherStephenImage1,
@@ -122,6 +124,11 @@ export const projects = [
             {
                 src: FatherStephenImage4,
                 description: "",
+                type: "image"
+            },
+            {
+                src: FatherStephenImage5,
+                description: "For each statement the priest makes, the baby/doll evaluates its distance (similarity) to each of the phrases in the “The Letter from an Unborn Child.” Of the evaluated phrases, the baby/doll then reads the most similar. Though not always a perfect match, the intention here is to illustrate that the priest is the orator in both of these cases––the Letter and his sermons. The only difference is, that through the letter, his incoherent oration is flattened and projected onto a one-dimensional character.",
                 type: "image"
             },
         ]
@@ -184,6 +191,11 @@ export const projects = [
             {
                 src: WeDoItAllTheTimeImage3,
                 type: "image",
+            },
+            {
+                src: WeDoItAllTheTimeImage9,
+                type: "image",
+                description: "To dynamically generate the film, a program parses a JSON input containing my Google Chrome history. From these entries, the program identifies the most recent links to YouTube videos whose titles contain keywords relating to crises. These videos are then downloaded and collaged into the film."
             },
             {
                 src: WeDoItAllTheTimeImage6,
