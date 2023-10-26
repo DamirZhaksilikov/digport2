@@ -125,12 +125,7 @@ export const projects = [
                 src: FatherStephenImage4,
                 description: "",
                 type: "image"
-            },
-            {
-                src: FatherStephenImage5,
-                description: "For each statement the priest makes, the baby/doll evaluates its distance (similarity) to each of the phrases in the “The Letter from an Unborn Child.” Of the evaluated phrases, the baby/doll then reads the most similar. Though not always a perfect match, the intention here is to illustrate that the priest is the orator in both of these cases––the Letter and his sermons. The only difference is, that through the letter, his incoherent oration is flattened and projected onto a one-dimensional character.",
-                type: "image"
-            },
+            }
         ]
     },
     {
