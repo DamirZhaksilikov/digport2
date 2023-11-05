@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.53cc1869.css",
-    "main.js": "/static/js/main.f017f9e3.js",
+    "main.js": "/static/js/main.7537af78.js",
     "static/js/787.9e4fa5a3.chunk.js": "/static/js/787.9e4fa5a3.chunk.js",
     "static/media/fatherstephen_cover.mp4": "/static/media/fatherstephen_cover.071a718c7ef04e61d01e.mp4",
     "static/media/wedoitallthetime_cover.mp4": "/static/media/wedoitallthetime_cover.29737e92a4b1f4eb72e5.mp4",
@@ -139,11 +139,11 @@
     "static/media/frame_00.jpg": "/static/media/frame_00.a052c96f06c5095c59c4.jpg",
     "index.html": "/index.html",
     "main.53cc1869.css.map": "/static/css/main.53cc1869.css.map",
-    "main.f017f9e3.js.map": "/static/js/main.f017f9e3.js.map",
+    "main.7537af78.js.map": "/static/js/main.7537af78.js.map",
     "787.9e4fa5a3.chunk.js.map": "/static/js/787.9e4fa5a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53cc1869.css",
-    "static/js/main.f017f9e3.js"
+    "static/js/main.7537af78.js"
   ]
 }
