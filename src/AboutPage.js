@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import './AboutPage.css';
 import { Link } from 'react-router-dom';
-import cv_pdf from './assets/general/CV-2023.06.pdf'
+import cv_pdf from './assets/general/CV-2023.09.pdf'
 import FacesVideo from '../src/assets/split_frames/icouldnthelpbutlook2.mp4'
 import { WindowContext } from './App';
 
