@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9670efda.css",
-    "main.js": "/static/js/main.379c19b3.js",
+    "main.js": "/static/js/main.56aa1d62.js",
     "static/js/787.9e4fa5a3.chunk.js": "/static/js/787.9e4fa5a3.chunk.js",
     "static/media/fatherstephen_cover.mp4": "/static/media/fatherstephen_cover.071a718c7ef04e61d01e.mp4",
     "static/media/gulfwarillness_cover.mp4": "/static/media/gulfwarillness_cover.d6998c17ea4eb2f9495c.mp4",
@@ -15,7 +15,7 @@
     "static/media/gulfwarillness_cover.jpg": "/static/media/gulfwarillness_cover.911f3ca8c0c8f9c21613.jpg",
     "static/media/fatherstephen_cover.png": "/static/media/fatherstephen_cover.d7dc557991fedb1fae40.png",
     "static/media/dollhouse_cover.png": "/static/media/dollhouse_cover.220704f1bdb7550069f3.png",
-    "static/media/CV-2023.06.pdf": "/static/media/CV-2023.06.4eea869e8fd5a353ef95.pdf",
+    "static/media/CV-2023.09.pdf": "/static/media/CV-2023.09.4460cc120f036c8d5e26.pdf",
     "static/media/fatherstephen_image2.jpg": "/static/media/fatherstephen_image2.c5dd7bb464dd1952b665.jpg",
     "static/media/fatherstephen_image1.jpg": "/static/media/fatherstephen_image1.5c67b0842ed688dccdd2.jpg",
     "static/media/fatherstephen_image4.jpg": "/static/media/fatherstephen_image4.64047982a89a06d7b317.jpg",
@@ -136,11 +136,11 @@
     "static/media/frame_00.jpg": "/static/media/frame_00.a052c96f06c5095c59c4.jpg",
     "index.html": "/index.html",
     "main.9670efda.css.map": "/static/css/main.9670efda.css.map",
-    "main.379c19b3.js.map": "/static/js/main.379c19b3.js.map",
+    "main.56aa1d62.js.map": "/static/js/main.56aa1d62.js.map",
     "787.9e4fa5a3.chunk.js.map": "/static/js/787.9e4fa5a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9670efda.css",
-    "static/js/main.379c19b3.js"
+    "static/js/main.56aa1d62.js"
   ]
 }
