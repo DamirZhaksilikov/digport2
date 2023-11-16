@@ -1,7 +1,6 @@
 import GulfWarIllnessCoverPhoto from '../assets/gulf war illness/gulfwarillness_cover.jpg';
 import GulfWarIllnessCoverVideo from '../assets/gulf war illness/gulfwarillness_cover.mp4';
 import GulfWarIllnessImage1 from '../assets/gulf war illness/web collection/gulfwarillness_1_1.jpg'
-import GulfWarIllnessVideo1 from '../assets/gulf war illness/web collection/gulfwarillness_video1.mp4'
 import GulfWarIllnessImage3 from '../assets/gulf war illness/web collection/gulfwarillness_image3.jpg'
 import GulfWarIllnessImage4 from '../assets/gulf war illness/web collection/gulfwarillness_image4.jpg'
 
@@ -11,7 +10,6 @@ import FatherStephenImage1 from '../assets/father stephen/web collection/fathers
 import FatherStephenImage2 from '../assets/father stephen/web collection/fatherstephen_image2.jpg';
 import FatherStephenImage3 from '../assets/father stephen/web collection/fatherstephen_image3.jpg';
 import FatherStephenImage4 from '../assets/father stephen/web collection/fatherstephen_image4.jpg';
-import FatherStephenImage5 from '../assets/father stephen/web collection/fatherstephen_image5.jpg';
 
 import MotherCoverPhoto from '../assets/mother/mother_cover.jpg';
 import MotherCoverVideo from '../assets/mother/mother_cover.mp4';
@@ -23,7 +21,6 @@ import WeDoItAllTheTimeImage1 from '../assets/We do it all the time/web collecti
 import WeDoItAllTheTimeImage2 from '../assets/We do it all the time/web collection/wdiatt_image2.jpg';
 import WeDoItAllTheTimeImage3 from '../assets/We do it all the time/web collection/wdiatt_image3.jpg';
 import WeDoItAllTheTimeImage6 from '../assets/We do it all the time/web collection/wdiatt_image6.jpg';
-import WeDoItAllTheTimeImage7 from '../assets/We do it all the time/web collection/wdiatt_image7.jpg';
 import WeDoItAllTheTimeImage8 from '../assets/We do it all the time/web collection/wdiatt_image8.jpg';
 import WeDoItAllTheTimeImage9 from '../assets/We do it all the time/web collection/wdiatt_image9.jpg';
 
@@ -42,7 +39,8 @@ import DollHouseImage8 from '../assets/doll house/web collection/dollhouse_image
 import DollHouseImage9 from '../assets/doll house/web collection/dollhouse_image9.jpg';
 import DollHouseImage10 from '../assets/doll house/web collection/dollhouse_image10.jpg';
 
-const GulfWarIllnessVideo3 = (<div className='embed-responsive-parent' id='gulf-war-illness-video1-parent'><iframe className="embed-responsive-item" src="https://player.vimeo.com/video/859626469?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="fatherstephen_video1"></iframe></div>);
+const GulfWarIllnessVideo3 = (<div className='embed-responsive-parent' id='gulf-war-illness-video1-parent'><iframe className="embed-responsive-item" src="https://www.youtube.com/embed/wk1H-OuTvos?si=7R3vXifQ32rLgOVw" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="fatherstephen_video1"></iframe></div>);
+const GulfWarIllnessVideo4 = (<div className='embed-responsive-parent' id='gulf-war-illness-video2-parent'><iframe className="embed-responsive-item" src="https://www.youtube.com/embed/pxmj0zpSDIs?si=NhTV7p8e7xi8PPza" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="fatherstephen_video1"></iframe></div>);
 const FatherStephenVideo1 = (<div className='embed-responsive-parent' id='father-stephen-video1-parent'><iframe className="embed-responsive-item" src="https://player.vimeo.com/video/859296717?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="fatherstephen_video1"></iframe></div>);
 const MotherVideo1 = (<div className='embed-responsive-parent' id='mother-video1-parent'><iframe className="embed-responsive-item" src="https://player.vimeo.com/video/859296871?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="fatherstephen_video1"></iframe></div>);
 const MotherVideo2 = (<div className='embed-responsive-parent' id='mother-video2-parent'><iframe className="embed-responsive-item" src="https://player.vimeo.com/video/859296979?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="fatherstephen_video1"></iframe></div>);
@@ -62,19 +60,18 @@ export const projects = [
         long_description: '<b>i. Project context</b><br/><p>Situated in the expansive deserts of Southwestern Arizona, the US Army Yuma Proving Ground (YPG) is one of the largest military test sites in the world. The selection of this location is the result of extensive studies to find terrains that are analogous to Middle Eastern deserts, where the US has been active militarily for thirty years. Here, a despotic system of production creates weapons that master and make use of desert climates.</p><p>Despite US soil being used to simulate <i>future conflict</i>, the analogous climate and in turn, analogous climate change-related hostilities in the American Southwest and Middle East produce a <i>shared precarity</i> for bodies on opposing ends of these simulations. <i>Gulf War Illness</i> is a body of research comprising case studies which explore and articulate a set of chronic conditions being experienced globally by respiratory systems in similar harsh desert climates. Largely, these studies are situated in two cities––Yuma, home to YPG, and Baghdad––where these shared conditions are exacerbated by US military activity and training.</p><br/><b>ii. Installation</b><br/><p>The research of <i>Gulf War Illness</i> manifests through an installation in which a film narrating these case-studies is screened within a loosely-reproduced YPG facility. This mock-facility features a <i>dust aggravation chamber</i>, a system commonly used at YPG to ensure weapon durability by exposing them to simulations of dust storms. This chamber provides a three-dimensional layer to the film, presenting the climate-conditions it narrates in real-time.</p><p>In contrast to the weapons tested at YPG, the device tested in <i>this</i> dust aggravation chamber is a low-cost medical ventilator. Such medical devices are used to treat extreme respiratory issues, ailments which will certainly increase in prevalence as climate conditions in Yuma and Baghdad deteriorate. Similarly synchronized with the film, this ventilator is an artificial stand-in for the respiratory systems of individuals featured in the case studies––imitating how one under these conditions would breathe and at times, struggle and fail to.</p><p>The ventilator used in this project has an unconventional build, using a combination of open-source assets and declassified YPG weapon design documents relating to dust. Thus, while this device is representative of the respiratory systems in these climates, it underscores the stark discrepancy between the machines optimized for these environments and the bodies that are forced to endure them. Yet, in leveraging weapon design documents to build a medical device, the aim of <i>Gulf War Illness</i> is to speculate how YPG assets could be reappropriated––producing an alternative conclusion to that of YPG’s original architects.</p><p>Considering, could such assets be leveraged to produce mutualistic computation where the vulnerable in <i>many regions</i> become tightly networked beneficiaries, rather than in favor of a single despot? Thinking more broadly, analogous conditions exist in many contexts globally and thus, could such a model be reproducible and multiplicious?</p>',
         visual_content: [
             {
+                content: GulfWarIllnessVideo4,
+                type: "vimeo-video"
+            },
+            {
                 src: GulfWarIllnessImage1,
-                description: "Prototyped mechanical ventilator and dust aggravation chamber",
+                description: "Mechanical ventilator and dust aggravation chamber",
                 type: "image"
             },
             {
                 content: GulfWarIllnessVideo3,
                 description: "Early draft of the film component in <i>Gulf War Illness</i>. In its current form, this essay-film explores how respiratory systems in Yuma and Iraq face parallel precarity as a result of analogous climate hostilities and nearby military activity. Given this shared experience, the film highlights how current climate change models expose a morbid irony in the ways in which Yuma’s climate has been leveraged to build weapons which have historically decimated Baghdad.",
                 type: "vimeo-video"
-            },
-            {
-                src: GulfWarIllnessVideo1,
-                description: "Prototype of the medical ventilator. This device is largely built using open source documents from <a href=’https://emergency-vent.mit.edu/’ target=’_blank’>MIT’s emergency ventilator toolbox</a> which was developed as a low-cost alternative to industrial ventilators that were in shortage during the COVID-19 pandemic. The MIT ventilator was not widely used in practice due to its feature shortcomings and non-certification. This was, in part, due to the project being forgotten after initial work over a decade since––only being revived after the pandemic had begun.<br/><br/>The history of this failure feels important, considering that existing models project Baghdad’s current climate catastrophes will be experienced in the future American Southwest. Despite this, the US military apparatus continues to rely on similar modeling to validate devices which only compound that destruction.",
-                type: "muted-video"
             },
             {
                 src: GulfWarIllnessImage3,
@@ -169,11 +166,6 @@ export const projects = [
         long_description: "<p><b>i. <i>We do it all the time</i> (film)</b></p><p>Isn’t unpredictability what keeps our eyes open?</p><p><i>Highway hypnosis</i> is a phenomenon occurring on roads with <i>only one type of visual scenery</i> in which a person can drive great distances with no recollection of having done so. One moment you’re on the highway and the next you’re blankly sitting outside your destination; half an hour of driving reduced to a blip––the distance you’ve driven and a slightly emptier tank as the only proof of the gaping hole in your memory.</p><p><i>We do it all the time</i> is an essay film which uses highway hypnosis as metaphor to explore how contemporary computing has redefined our understanding and experience of crisis. The film proposes the ‘transactional crisis,’ where related crises are disjointed and expressed as seemingly isolated units with a transactional solution––a click, a share, a donation. Under this disjointed view of crises, digital content––such as GoFundMe requests for medical bills––are so commonplace that the posts themselves, <i>like a singular roadside scenery,</i> have developed a shared vernacular and visual language.</p><p>To make this point clear, <i>We do it all the time</i> is a film that generates dynamically. Prior to each run, a program parses my web history and updates the film’s visuals content with videos of crises that I have recently viewed. Thus, each runtime is different––collaging videos which reference different events, but are stylistically similar. Thus, in all of the sameness that these different videos produce, the film’s argument remains the same: that through an unending stream of interchangeable crises, we’ve fallen asleep on the wheel.</p><br/><p><b>ii. <i>Sing about me, I’m dying of thirst</i> (thesis)</b></p><p>Accompanying this film is a thesis, which expands upon the definition and implications of the transactional crises using GoFundMe fundraisers in drought-stricken Texas as a case study. <a target='_blank' href=" + SingAboutMeImDyingOfThirst_pdf + ">You can view it here.</a></p>",
         visual_content: [
             {
-                src: WeDoItAllTheTimeImage1,
-                description: "Installation setup––<i>We do it all the time</i> is streamed on a shattered windshield above pieces from a car interior.",
-                type: "image"
-            },
-            {
                 src: WeDoItAllTheTimeImage2,
                 description: "A photo taken during one of the screenings of the <i>We do it all the time</i>. The clips from this generated iteration featured newsreel from the <a href='https://en.wikipedia.org/wiki/Killing_of_Abdulrahman_al-Awlaki' target='_blank'>2011 murder of a US teenager named Abdulrahman Anwar al-Awlaki</a> by the CIA via drone strike.",
                 type: "image"
@@ -193,13 +185,13 @@ export const projects = [
                 description: "To dynamically generate the film, a program parses a JSON input containing my Google Chrome history. From these entries, the program identifies the most recent links to YouTube videos whose titles contain keywords relating to crises. These videos are then downloaded and collaged into the film."
             },
             {
-                src: WeDoItAllTheTimeImage6,
-                description: "For the installation and screening of <i>We do it all the time</i> a series of car interior parts were created based on clips that were found in previous iterations of the film. This particular piece is a headrest upholstered with teddy bear skins that resembled stuffed animals placed at the memorial of <a href='https://en.wikipedia.org/wiki/Dimitris_Christoulas' target='_blank'>Dimitris Christoulas, a Greek pensioner who committed suicide in protest of austerity measures the government took after the '08 financial crisis.</a>",
-                type: "image",
+                src: WeDoItAllTheTimeImage1,
+                description: "Installation setup––<i>We do it all the time</i> is streamed on a shattered windshield above pieces from a car interior.",
+                type: "image"
             },
             {
-                src: WeDoItAllTheTimeImage7,
-                description: "Gas and brake pedals, one for each of the al-Awlaki children––Abdulrahman and Nawar––who were killed by the US government 6 years apart.",
+                src: WeDoItAllTheTimeImage6,
+                description: "For the installation and screening of <i>We do it all the time</i> a series of car interior parts were created based on clips that were found in previous iterations of the film. This particular piece is a headrest upholstered with teddy bear skins that resembled stuffed animals placed at the memorial of <a href='https://en.wikipedia.org/wiki/Dimitris_Christoulas' target='_blank'>Dimitris Christoulas, a Greek pensioner who committed suicide in protest of austerity measures the government took after the '08 financial crisis.</a>",
                 type: "image",
             },
             {
