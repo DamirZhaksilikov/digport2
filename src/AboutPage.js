@@ -52,7 +52,6 @@ export default function AboutPage() {
                 <br />
                 <div id="bio-main-text">{artistBioText}</div>
                 <br />
-                <br />
             </div>
             <div id="contact-links">
                 <Link className='contact-link' to='mailto:damir.zhaksilikov@gmail.com' target='_blank'>damir.zhaksilikov@gmail.com</Link><br />
@@ -60,6 +59,7 @@ export default function AboutPage() {
                 <a href={cv_pdf} target="_blank">CV</a><br />
                 <Link className='contact-link' to='https://www.are.na/damir-zhaksilikov/' target='_blank'>are.na</Link><br />
                 <Link className='contact-link' to='https://www.instagram.com/damirzhaksilikov/' target='_blank'>social</Link><br />
+                <Link className='contact-link' to='https://sleepingonaspeedway.substack.com/' target='_blank'>substack</Link><br />
             </div>
         </div>
     </div>)
