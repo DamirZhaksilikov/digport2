@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9670efda.css",
-    "main.js": "/static/js/main.00e379d8.js",
+    "main.js": "/static/js/main.4ea11afc.js",
     "static/js/787.9e4fa5a3.chunk.js": "/static/js/787.9e4fa5a3.chunk.js",
     "static/media/gulfwarillness_cover.mp4": "/static/media/gulfwarillness_cover.56badc3c04e08898fc04.mp4",
     "static/media/fatherstephen_cover.mp4": "/static/media/fatherstephen_cover.ef517c5ac5db24700608.mp4",
@@ -136,11 +136,11 @@
     "static/media/frame_00.jpg": "/static/media/frame_00.a052c96f06c5095c59c4.jpg",
     "index.html": "/index.html",
     "main.9670efda.css.map": "/static/css/main.9670efda.css.map",
-    "main.00e379d8.js.map": "/static/js/main.00e379d8.js.map",
+    "main.4ea11afc.js.map": "/static/js/main.4ea11afc.js.map",
     "787.9e4fa5a3.chunk.js.map": "/static/js/787.9e4fa5a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9670efda.css",
-    "static/js/main.00e379d8.js"
+    "static/js/main.4ea11afc.js"
   ]
 }
