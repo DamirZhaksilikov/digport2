@@ -8,12 +8,12 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "lodash": "^4.17.21",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-device-detect": "^2.2.3",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.14.2",
-    "react-scripts": "5.0.1",
-    "react-snap": "^1.23.0",
+    "react-scripts": "^3.4.4",
+    "react-snap": "^1.13.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -45,5 +45,16 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamirZhaksilikov/digport2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamirZhaksilikov/digport2/issues"
+  },
+  "description": ""
 }

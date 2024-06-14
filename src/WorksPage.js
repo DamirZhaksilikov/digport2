@@ -1,3 +1,4 @@
+import React from "react";
 import { projects } from "./constants/project_constants";
 import ProjectPreviewContainer from './ProjectPreviewContainer';
 import './WorksPage.css'

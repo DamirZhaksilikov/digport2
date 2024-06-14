@@ -1,3 +1,5 @@
+import React from "react";
+
 import GulfWarIllnessCoverPhoto from '../assets/gulf war illness/gulfwarillness_cover.jpg';
 import GulfWarIllnessCoverVideo from '../assets/gulf war illness/gulfwarillness_cover.mp4';
 import GulfWarIllnessImage1 from '../assets/gulf war illness/web collection/gulfwarillness_1_1.jpg'
@@ -129,7 +131,7 @@ export const projects = [
         id: "mother",
         image_src: MotherCoverPhoto,
         video_src: MotherCoverVideo,
-        name: "mother",
+        name: "portrait of mother",
         isOnGoing: false,
         year: 2022,
         data_origin: ["Seattle, USA"],
