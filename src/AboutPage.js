@@ -55,7 +55,7 @@ export default function AboutPage() {
             <div id="contact-links">
                 <Link className='contact-link' to='mailto:damir.zhaksilikov@gmail.com' target='_blank'>damir.zhaksilikov@gmail.com</Link><br />
                 <br />
-                <a href="https://docs.google.com/document/d/1v-xjnd9CKi-vzSTjYsOEh2VE1Cwof4bjqHIBrtGvUpE/edit?usp=sharing" target="_blank">CV</a><br />
+                <a href="https://docs.google.com/document/d/1gyWsSJTgC3a1inXVn_cv_xGZ2EELjDf8_2sP6iikhUU/edit?usp=sharing" target="_blank">CV</a><br />
                 <Link className='contact-link' to='https://www.are.na/damir-zhaksilikov/' target='_blank'>are.na</Link><br />
                 <Link className='contact-link' to='https://www.instagram.com/damirzhaksilikov/' target='_blank'>social</Link><br />
                 <Link className='contact-link' to='https://sleepingonaspeedway.substack.com/' target='_blank'>substack</Link><br />
